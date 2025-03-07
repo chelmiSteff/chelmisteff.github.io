@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+}
+
+h1{
+    font-size: 40px;
+    line-height: 65px;
+    color: saddlebrown;
+}
+h2{
+    font-size: 30px;
+    line-height: 55px;
+    color: saddlebrown;
+}
+h3{
+    font-size: 20px;
+    line-height: 45px;
+    color: saddlebrown;
+}
+h4{
+    font-size: 15px;
+    line-height: 35px;
+    color: saddlebrown;
+}
+p{
+    font-size: 16px;
+    color: black;
+    margin: 15px 0 20px 0;
+    line-height: 30px;
+}
+/*NAVIGATION*/
+
+.logo{
+    max-width: 50%;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu li{
+    list-style: none;
+    padding: 0px 20px;
+}
+#menu li a{
+    color: saddlebrown;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#menu li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: chocolate;
+    display: block;
+    margin-left: 0px;
+    transition: 1s;
+
+}
+#menu li:hover::after{
+    width: 75%;
+}
+
+/*IMG NAV TEXTE ET BOUTON*/
+
+.terres{
+    color: saddlebrown;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid saddlebrown;
+    padding: 12px 34px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: transparent;
+    cursor: pointer;
+    margin: 24px 10px;
+}
+.terres:hover{
+    border: 1px solid chocolate;
+    background-color: chocolate;
+    color: white;
+    transition: 1s;
+
+}
+
+.header{
+    background-image: url("../images/ziguinchor\(1\).jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.header h1{
+    color: saddlebrown;
+    padding-bottom: 13px;
+}
+.header h3{
+    color: saddlebrown;
+    padding-bottom: 10px;
+}
+
+/*LIGNE ET COLONNE*/
+
+.ziguinchor{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.ligne-video{
+    display: inline-block;
+    margin-top: 5%;
+    justify-content: space-between;
+    padding: 20px;
+}
+.ligne-video video{
+    width: 100%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    position: relative;
+}
+.colonne{
+    flex-basis: 50%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    position: relative;
+}
+
+.colonne h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+.colonne p{
+    padding: 10px 4px;
+}
+.colonne:hover{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
+}
+
+.ligne-video video:hover{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
+}
+
+/*A PROPOS */
+
+.apropos{
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(225, 225, 225, 0.9)), url("../images/ziguinchor\(5\).jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 50px 0 0;
+}
+.apropos div{
+    width: 60%;
+}
+.apropos h2{
+    padding-bottom: 10px;
+}
+.apropos p{
+    padding-bottom: 10px;
+    color: black;
+    font-size: 18px;
+}
+
+/*CONTACT*/
+
+.contact-form{
+	width: 100%;
+	margin: auto;
+	background-image: url("../images/ziguinchor.JPG");
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.form{
+	width: 50%;
+	background-color: lightgray;
+	margin: 70px auto;
+	padding: 50px;
+	border-radius: 10px;
+}
+
+.form h4{
+	color: saddlebrown;
+	font-size: 26px;
+	font-weight: 600;
+	margin-bottom: 16px;
+	line-height: 30px;
+}
+
+.form p{
+	color: black;
+	font-size: 15px;
+	padding-bottom: 10px;
+}
+
+.ligne-form{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.ligne-form input{
+	width: 48%;
+	font-size: 14px;
+	font-weight: 400;
+	border-radius: 5px;
+	border:none;
+	background-color: white;
+	color: black;
+	outline: none;
+	padding: 15px 20px;
+	margin-bottom: 20px;
+
+}
+
+.ligne-col-form input, .ligne-col-form textarea{
+	width: 100%;
+	font-size: 14px;
+	font-weight: 400;
+	border-radius: 5px;
+	border: none;
+	background-color: white;
+	color: black;
+	padding: 15px 20px;
+	margin-bottom: 20px;
+}
+
+.ligne-col-form button{
+	width: 100%;
+	font-size: 20px;
+	padding: 12px 20px;
+	background-color: white;
+	border: none;
+	color: saddlebrown;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: 700;
+}
+
+.ligne-col-form button:hover{
+	background-color: chocolate;
+    color: white;
+	transition: 1s;
+}
+
+/*FOOTER*/
+
+footer{
+	margin: 35px 100px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.row{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 20px;
+}
+
+.row h3{
+	color: black;
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.row h4{
+	color: black;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 16px;
+}
+
+.adr{
+	line-height: 20px;
+	padding-bottom: 18px;
+	border-bottom: 1px solid lightgray;
+}
+
+footer p{
+	font-size: 14px;
+	margin: 0 0 10px 0;
+}
+
+.row a{
+	font-size: 14px;
+	margin-bottom: 10px;
+	text-decoration: none;
+	color: chocolate;
+}
+
+.row a:hover{
+	color: black;
+}
+
+.copyright{
+	width: 100%;
+	text-align: center;
+}
+
+.adr div{
+	display: flex;
+}
+
+.fa-location-dot{
+	font-size: 16px;
+	line-height: 20px;
+	color: black;
+	margin-right: 20px;
+}
+
+.fa-phone{
+	font-size: 16px;
+	line-height: 20px;
+	color: black;
+	margin-right: 20px;
+}
+
+.fa-envelope{
+	font-size: 16px;
+	line-height: 20px;
+	color: black;
+	margin-right: 20px;
+}
